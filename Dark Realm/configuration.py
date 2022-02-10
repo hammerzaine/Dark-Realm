@@ -14,6 +14,7 @@ from includes import *
 #################
 #   Variables   #
 #################
+Version = 'v0.1'
 DISPLAYW = 800
 DISPLAYH = 600
 WHITE = (255,255,255)
