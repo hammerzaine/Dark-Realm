@@ -34,7 +34,7 @@ height = screen.get_height()
 X, Y = screen.get_size()
 BUTTON_RES_W = width/2
 BUTTON_RES_H = height/2
-USER_INPUT = ''
+USER_INPUT = 'Option'
 Input_Rect = ''
 clock = pygame.time.Clock()
 
