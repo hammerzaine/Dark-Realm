@@ -21,6 +21,7 @@ BLACK = (1,1,1)
 WHITE = (255,255,255)
 GREEN = (0,255,0)
 BLUE = (0,0,128)
+RED = (255,0,0)
 FONT = 'Corbel'
 QTEXT = 'QUIT'
 NTEXT = 'NEW GAME'
@@ -32,16 +33,10 @@ X, Y = screen.get_size()
 BUTTON_RES_W = width/2
 BUTTON_RES_H = height/2
 
-def Text(_text_, color, fontsize):
+def Text(_text_, color, fontsize, FONT):
     font = pygame.font.SysFont(FONT, fontsize)
     text = font.render(_text_, True, color)
     return text
 
 def Res():
     return (width/2, height/2)
-
-def Button(locationx,locationy, sizex,sizey):
-    pygame.draw.rect(screen, GREEN, pygame.Rect(sizex,sizey,locationx,locationy ))
-    pygame.display.flip()
-
-#class Adventure(action):
